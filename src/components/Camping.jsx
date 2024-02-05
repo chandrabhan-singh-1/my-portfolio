@@ -8,40 +8,46 @@ import { useAtom } from "jotai";
 import React from "react";
 import { degToRad } from "three/src/math/MathUtils";
 import { currentPageAtom } from "./UI";
+import {cn} from "../lib/utils";
 
 const OverlayItem = ({
   className = "",
   title,
   description,
-  price,
+  label,
   bgColor,
+  link,
   ...props
 }) => {
+  const publicUrl = import.meta.env.VITE_PUBLIC_URL || '/';
+  const finalLink = `${publicUrl}${link}`;
+  const target = link==="cv"? "_blank":"_self";
   const [currentPage] = useAtom(currentPageAtom);
   return (
     <Html
       transform
       distanceFactor={1.2}
       center
-      className={`w-48 rounded-md overflow-hidden ${
-        currentPage === "store" ? "" : "opacity-0"
-      } transition-opacity duration-1000 ${className}`}
+      className={cn("w-48 rounded-md overflow-hidden transition-opacity duration-500",
+        currentPage === "store" ? "" : "opacity-0")}
       {...props}
     >
-      <div className="bg-white bg-opacity-50 backdrop-blur-lg text-xs p-2 w-full">
+      <div className="bg-white bg-opacity-70 backdrop-blur-lg text-xs p-2 w-full">
         <h2 className="font-bold">{title}</h2>
         <p>{description}</p>
       </div>
-      <button
-        className={`${bgColor} hover:bg-opacity-50 transition-colors duration-500 px-4 py-2 font-bold text-white w-full text-xs`}
-      >
-        Add to cart ${price}
-      </button>
+      <a href={`${link==="cv" ? import.meta.env.VITE_CV_LINK : finalLink}`} target={target}>
+        <button
+          className={cn("tracking-wider hover:bg-opacity-50 transition-colors duration-500 px-4 py-2 font-semibold text-white w-full text-xs", bgColor)}
+        >
+          {label}
+        </button>
+      </a>
     </Html>
   );
 };
 
-export function Camping({ html, ...props }) {
+export default function Camping({ html, ...props }) {
   const { nodes, materials } = useGLTF("/models/Camping Asset Collection.glb");
   return (
     <group {...props} dispose={null}>
@@ -198,10 +204,11 @@ export function Camping({ html, ...props }) {
               position-x={1.2}
               position-z={1.2}
               position-y={-0.1}
-              title={"Tent"}
-              description={"2 person tent, rest assured you'll be dry."}
-              price={"129.99"}
-              bgColor={"bg-yellow-500"}
+              title={"About Me!"}
+              description={"I am a full-stack web developer specialized in Next.js. click below to know more about me..."}
+              label={"Click 🙋🏻"}
+              link={"/about"}
+              bgColor={"bg-purple-500"}
               className={"transition delay-1000"}
             />
           )}
@@ -605,9 +612,10 @@ export function Camping({ html, ...props }) {
               position-y={0.44}
               position-z={0.2}
               rotation-y={degToRad(20)}
-              title={"Backpack"}
-              description={"Ideal for camping and storing your belongings."}
-              price={"49.99"}
+              title={"Projects!"}
+              description={"Have a look at some of my awesome projects."}
+              label={"Work 🛍️"}
+              link={"/projects"}
               bgColor={"bg-green-500"}
               className={"transition delay-300"}
             />
@@ -1139,9 +1147,10 @@ export function Camping({ html, ...props }) {
               position-y={-0.2}
               position-z={0.25}
               rotation-x={-degToRad(20)}
-              title={"Lantern"}
-              description={"Story time is always better with a lantern."}
-              price={"39.99"}
+              title={"Connect with me!"}
+              description={"If you have any feedback/views to share, then send me your message. I'd love to know that..."}
+              label={"Contact📧"}
+              link={"/contact"}
               bgColor={"bg-orange-500"}
             />
           )}
@@ -1345,9 +1354,10 @@ export function Camping({ html, ...props }) {
               position-y={0.25}
               position-z={-0.14}
               rotation-x={-degToRad(30)}
-              title={"Sleeping Bag"}
-              description={"Keeps you warm and comfortable."}
-              price={"79.99"}
+              title={"Resume!"}
+              description={"Interested in hiring me or working with me? Check this out...👇🏽"}
+              label={"CV 📝"}
+              link={'cv'}
               bgColor={"bg-blue-500"}
               className="transition delay-700"
             />

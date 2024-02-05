@@ -2,7 +2,7 @@ import { atom, useAtom } from "jotai";
 
 export const currentPageAtom = atom("intro");
 
-export const UI = () => {
+const UI = () => {
   const [currentPage, setCurrentPage] = useAtom(currentPageAtom);
   return (
     <div className="fixed inset-0 pointer-events-none">
@@ -14,11 +14,13 @@ export const UI = () => {
         <div className="h-[66%]"></div>
         <button
           onClick={() => setCurrentPage("store")}
-          className="pointer-events-auto py-4 px-8 bg-orange-400 text-white font-black rounded-full hover:bg-orange-600 cursor-pointer transition-colors duration-500"
+          className="pointer-events-auto py-4 px-8 text-lg bg-gradient-to-b from-teal-300 to-slate-400 text-fuchsia-700 tracking-wider font-bold rounded-full cursor-pointer transition-colors duration-500 hover:scale-105"
         >
           ENTER
-        </button>
+        </button> 
       </section>
     </div>
   );
 };
+
+export default UI;

@@ -1,25 +1,32 @@
-import { Canvas } from "@react-three/fiber";
-import { Bloom, EffectComposer } from "@react-three/postprocessing";
-import { Suspense } from "react";
-import { Experience } from "./components/Experience";
-import { UI } from "./components/UI";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-function App() {
+import { Footer, Navbar } from "./components";
+import { About, Contact, Home, Projects } from "./pages";
+
+const App = () => {
   return (
-    <>
-      <Canvas shadows camera={{ position: [0, 0, 8], fov: 42 }}>
-        <color attach="background" args={["#171720"]} />
-        <fog attach="fog" args={["#171720", 10, 30]} />
-        <Suspense>
-          <Experience />
-        </Suspense>
-        <EffectComposer>
-          <Bloom mipmapBlur intensity={1.2} />
-        </EffectComposer>
-      </Canvas>
-      <UI />
-    </>
+    <main className="bg-slate-300/20">
+      <Router>
+          <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/*"
+            element={
+              <>
+                <Routes>
+                  <Route path="/about" element={<About />} />
+                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/contact" element={<Contact />} />
+                </Routes>
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
+      </Router>
+    </main>
   );
-}
+};
 
 export default App;

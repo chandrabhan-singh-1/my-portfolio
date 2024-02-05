@@ -12,13 +12,13 @@ import { useAtom } from "jotai";
 import { useEffect, useRef } from "react";
 import { Color } from "three";
 import { degToRad, lerp } from "three/src/math/MathUtils";
-import { Camping } from "./Camping";
+import Camping from "./Camping";
 import { currentPageAtom } from "./UI";
 
 const bloomColor = new Color("#fff");
 bloomColor.multiplyScalar(1.5);
 
-export const Experience = () => {
+const Experience = () => {
   const controls = useRef();
   const meshFitCameraHome = useRef();
   const meshFitCameraStore = useRef();
@@ -71,15 +71,15 @@ export const Experience = () => {
       </mesh>
       <Text
         font={"fonts/Poppins-Black.ttf"}
-        position-x={-1.3}
-        position-y={-0.5}
+        position-x={0.5}
+        position-y={0.2}
         position-z={1}
-        lineHeight={0.8}
-        textAlign="center"
+        lineHeight={0.9}
+        textAlign="left"
         rotation-y={degToRad(30)}
         anchorY={"bottom"}
       >
-        MY LITTLE{"\n"}CAMPING
+        CHANDRABHAN{"\n"}SINGH
         <meshBasicMaterial
           color={bloomColor}
           toneMapped={false}
@@ -90,7 +90,7 @@ export const Experience = () => {
             <Environment preset="sunset" />
             <Float floatIntensity={4} rotationIntensity={5}>
               <Camping
-                scale={1.6}
+                scale={1.2}
                 rotation-y={-degToRad(25)}
                 rotation-x={degToRad(40)}
                 position-y={-0.5}
@@ -129,3 +129,5 @@ export const Experience = () => {
 };
 
 useFont.preload("fonts/Poppins-Black.ttf");
+
+export default Experience;
