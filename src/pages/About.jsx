@@ -34,12 +34,12 @@ const About = () => {
         <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill) => (
             <div className="block-container w-20 h-20" key={skill.name}>
-              <div className="btn-back bg-gradient-to-br from-sky-300 to-gray-300 rounded-xl" />
+              <div className="btn-back bg-gradient-to-br from-sky-400 to-gray-300 rounded-xl" />
                 <div className="btn-front rounded-xl flex justify-center items-center relative">
                   <img
                     src={skill.imageUrl}
                     alt={skill.name}
-                    className="w-1/2 h-1/2 object-contain"
+                    className="w-1/2 h-1/2 object-contain contrast-125"
                   />
                 <p className="absolute text-center top-16 text-xs w-full">{skill.name}</p>
                 </div>

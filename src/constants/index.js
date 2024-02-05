@@ -10,6 +10,8 @@ import {
   cv,
   auth,
   taskify,
+  shadcn,
+  authLogo,
 } from "../assets/images";
 import {
   css,
@@ -83,6 +85,11 @@ export const skills = [
     type: "Version Control",
   },
   {
+    imageUrl: shadcn,
+    name: "Shadcn-UI",
+    type: "Frontend"
+  },
+  {
     imageUrl: mui,
     name: "Material-UI",
     type: "Frontend",
@@ -126,6 +133,11 @@ export const skills = [
     imageUrl: docker,
     name: "Docker",
     type: "Containerization",
+  },
+  {
+    imageUrl: authLogo,
+    name: "Auth.js",
+    type: "Authentication",
   },
 ];
 
@@ -196,7 +208,7 @@ export const socialLinks = [
   {
     name: "My Resume",
     iconUrl: cv,
-    link: "https://drive.google.com/file/d/1pM0NaC611ckWaiLQuAMu4MXP-sfa5ahF/view?usp=sharing",
+    link: "https://drive.google.com/file/d/14ZgOFYqvynmeZInN7YIyEnC32AKPbYpe/view?usp=sharing",
   },
   {
     name: "GitHub",

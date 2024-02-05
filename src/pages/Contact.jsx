@@ -156,12 +156,12 @@ const Contact = () => {
         >
           <directionalLight position={[0, 0, 1]} intensity={2.5} />
           <ambientLight intensity={0.5} />
-          <pointLight position={[5, 10, 0]} intensity={-1} />
+          <pointLight position={[5, 15, 0]} intensity={-0.5} />
           <spotLight
             position={[10, 10, 10]}
             angle={0.15}
             penumbra={1}
-            intensity={2}
+            intensity={0.5}
           />
           <Suspense fallback={<Loader />}>
             <Fox
