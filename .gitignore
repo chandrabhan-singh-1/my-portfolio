@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # environment variables directories
-*.env
+.env
