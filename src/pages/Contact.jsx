@@ -5,7 +5,7 @@ import { Suspense, useRef, useState } from "react";
 import { Fox } from "../components";
 import useAlert from "../hooks/useAlert";
 import { Alert, Loader } from "../components";
-import { sendEmail } from "../lib/resend";
+// import { sendEmail } from "../lib/resend";
 
 const Contact = () => {
   const formRef = useRef();
@@ -26,13 +26,28 @@ const Contact = () => {
     setLoading(true);
     setCurrentAnimation("hit");
 
-    const values = {
-      name: form.name,
-      email: form.email,
-      message: form.message,
-    };
+    // const values = {
+    //   name: form.name,
+    //   email: form.email,
+    //   number: "",
+    //   message: form.message,
+    // };
 
-    sendEmail(values)
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Chandrabhan",
+          from_email: form.email,
+          from_number: "",
+          to_email: import.meta.env.VITE_MY_EMAIL,
+          message: form.message,
+          reply_to: form.email,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
       .then((data) => {
         console.log(data);
         setLoading(false);

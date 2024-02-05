@@ -13,7 +13,8 @@ export async function sendEmail(values) {
   });
 
   if (error) {
-    return console.error({ error });
+    console.error("sendEmail Error: " + error);
+    throw new Error(error.message)
   }
 
   console.log({ data });
