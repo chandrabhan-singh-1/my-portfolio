@@ -14,10 +14,10 @@ const UI = () => {
         <div className="h-[66%]"></div>
         <button
           onClick={() => setCurrentPage("store")}
-          className="pointer-events-auto py-4 px-8 text-lg bg-gradient-to-b from-teal-300 to-slate-400 text-fuchsia-700 tracking-wider font-bold rounded-full cursor-pointer transition-colors duration-500 hover:scale-105"
+          className="pointer-events-auto py-4 px-8 text-lg bg-gradient-to-b from-teal-600 to-sky-600 text-sky-100 tracking-wider font-black rounded-full cursor-pointer transition-colors duration-500 hover:scale-105 brightness-110"
         >
           ENTER
-        </button> 
+        </button>
       </section>
     </div>
   );
