@@ -208,7 +208,7 @@ export const socialLinks = [
   {
     name: "My Resume",
     iconUrl: cv,
-    link: "https://drive.google.com/file/d/14ZgOFYqvynmeZInN7YIyEnC32AKPbYpe/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1XZP3wUNvCYJjv2jd_9JraNaqCGmDLiHG/view?usp=sharing",
   },
   {
     name: "GitHub",
@@ -237,7 +237,7 @@ export const projects = [
     iconUrl: taskify,
     theme: "btn-back-purple",
     name: "Trello Clone: Taskify",
-    features: "Manage organizations, create boards, unsplash api for bg image, stripe based subscription, drag & drop, recording task history etc.",
+    features: "Manage organizations, create boards, using unsplash api for bg-images, stripe based subscription, drag & drop, recording task history etc.",
     description:
       'Created a full-stack replica of the popular task management platform "Trello," enabling teams & individuals to manage several projects and tasks at one place.',
     link: "https://nextjs-14-trello-clone.vercel.app/",
@@ -247,7 +247,7 @@ export const projects = [
     iconUrl: auth,
     theme: "btn-back-blue",
     name: "Authentication App: NextAuth/Auth.js",
-    features: "2-Factor-Authentication, role based permission, OAuth services, Email verification, seamless real-time data updation etc",
+    features: "2-Factor-Authentication, role based permissions, OAuth services, Email verification, seamless real-time data updation etc.",
     description:
       "Created a Auth.js/NextAuth based authentication project. This project is intended to showcase my NextAuth implementation skills.",  
       link: "https://next-auth-js-mu.vercel.app/",
