@@ -78,7 +78,7 @@ const Projects = () => {
         ))}
       </div>
       <div className="h-[350px] mb-8">
-      <img src={coder} className="w-[350px] m-auto h-full rounded-full text-transparent animate-custom-bounce transition-all" />
+      <img src={coder} className="w-[350px] m-auto h-full rounded-full border-[1px] border-black/70 text-transparent animate-custom-bounce transition-all" />
       </div>
       <hr className="border-slate-400" />
       <CTA />

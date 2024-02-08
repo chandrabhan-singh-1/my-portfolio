@@ -191,7 +191,7 @@ export const experiences = [
     ],
   },
   {
-    title: "WordPress: Full-Stack Development",
+    title: "WordPress Web Development",
     icon: wp,
     iconBg: "#fff",
     iconClass: "scale-150",
@@ -208,7 +208,7 @@ export const socialLinks = [
   {
     name: "My Resume",
     iconUrl: cv,
-    link: "https://drive.google.com/file/d/1XZP3wUNvCYJjv2jd_9JraNaqCGmDLiHG/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1Zb8gfWRzRLl8dcNgRX228ncQEP7vsjld/view?usp=sharing",
   },
   {
     name: "GitHub",
