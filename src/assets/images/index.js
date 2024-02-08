@@ -14,6 +14,7 @@ import coder2 from "./bg-my.png";
 import taskify from "./Taskify.jpg";
 import authLogo from "./auth.png";
 import shadcn from "./shadcn.png";
+import genius from "./genius.jpg";
 
 export {
   gamehub,
@@ -31,5 +32,6 @@ export {
   coder2,
   taskify,
   authLogo,
-  shadcn
+  shadcn,
+  genius
 };
