@@ -1,3 +1,4 @@
+import mine from "https://github.com/chandrabhan-singh-1/shared-assets/blob/main/Images/portfolio/images/bg-my.png";
 import docker from "./docker.png";
 import frontend from "./Frontend.jpg";
 import backend from "./Backend.jpg";
@@ -6,7 +7,7 @@ import wp from "./WordPress.png";
 import prisma from "./prisma.png";
 import python from "./python.png";
 import cv from "./cv.png";
-import me from "./me2.png"
+import me from "./me2.png";
 import gamehub from "./GameHub.jpg";
 import auth from "./authjs.jpg";
 import coder from "./coder.jpg";
@@ -33,5 +34,6 @@ export {
   taskify,
   authLogo,
   shadcn,
-  genius
+  genius,
+  mine,
 };

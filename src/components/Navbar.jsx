@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom";
 
 import { coder2 } from "../assets/images";
+import { mine } from "../assets/images";
 
 const Navbar = () => {
   return (
     <header className="header">
       <NavLink to="/" className={"shrink-0"}>
         <img
-          src={coder2}
+          src={mine}
           alt="logo"
           height={70}
           width={70}
@@ -19,7 +20,9 @@ const Navbar = () => {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-sky-400 underline underline-offset-8" : "hover:text-sky-400 hover:underline hover:underline-offset-8 text-white"
+            isActive
+              ? "text-sky-400 underline underline-offset-8"
+              : "hover:text-sky-400 hover:underline hover:underline-offset-8 text-white"
           }
         >
           About
@@ -27,7 +30,9 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-sky-400 underline underline-offset-8" : "hover:text-sky-400 hover:underline hover:underline-offset-8 text-white"
+            isActive
+              ? "text-sky-400 underline underline-offset-8"
+              : "hover:text-sky-400 hover:underline hover:underline-offset-8 text-white"
           }
         >
           Projects
@@ -35,7 +40,9 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-sky-400 underline underline-offset-8" : "hover:text-sky-400 hover:underline hover:underline-offset-8 text-white"
+            isActive
+              ? "text-sky-400 underline underline-offset-8"
+              : "hover:text-sky-400 hover:underline hover:underline-offset-8 text-white"
           }
         >
           Contact Me
