@@ -12,15 +12,19 @@ const Projects = () => {
         My{" "}
         <span className="blue-gradient_text drop-shadow font-semibold">
           Projects!
-        </span>📜
+        </span>
+        📜
       </h1>
 
-      <p className="text-slate-500 mt-2 leading-relaxed">
+      <p className="text-slate-600 mt-2 leading-relaxed">
         I've embarked on numerous projects throughout the years, but these are
-        some of the closest to my heart. Many of them are public and open-source, so if
-        you come across something that downgrade your interest, feel free to
-        explore the codebase and contribute your ideas for further enhancements.
-        Your collaboration is highly valued!
+        some of the closest to my heart. Many of them are public and
+        open-source, so if you come across something that downgrade your
+        interest, feel free to explore the codebase and contribute your ideas
+        for further enhancements. Your collaboration is highly valued!
+        <br />
+        [Note: Using Vercel free tier for hosting! It may cause response time
+        errors (specially on Genius).]
       </p>
 
       <div className="flex flex-wrap mt-20 mb-14 gap-16">
@@ -46,8 +50,11 @@ const Projects = () => {
               <h4 className="text-2xl font-poppins font-semibold">
                 {project.name}
               </h4>
-              <p className="mt-2 text-slate-500">{project.description}</p>
-              <p className="mt-2 text-slate-500"><strong>Features: </strong>{project.features}</p>
+              <p className="mt-2 text-slate-600">{project.description}</p>
+              <p className="mt-2 text-slate-600">
+                <strong>Features: </strong>
+                {project.features}
+              </p>
               <div className="mt-3 flex items-center gap-2 font-poppins ">
                 <Link
                   to={project.codeLink}
@@ -78,7 +85,10 @@ const Projects = () => {
         ))}
       </div>
       <div className="h-[350px] mb-8">
-      <img src={coder} className="w-[350px] m-auto h-full rounded-full border-[1px] border-black/70 text-transparent animate-custom-bounce transition-all" />
+        <img
+          src={coder}
+          className="w-[350px] m-auto h-full rounded-full border-[1px] border-black/70 text-transparent animate-custom-bounce transition-all"
+        />
       </div>
       <hr className="border-slate-400" />
       <CTA />

@@ -21,7 +21,7 @@ const About = () => {
         👋
       </h1>
 
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
+      <div className="mt-5 flex flex-col gap-3 text-slate-600">
         <p>
           A software developer from India, specialized in Full-stack web
           development using Next.js & MERN stack.
@@ -35,14 +35,16 @@ const About = () => {
           {skills.map((skill) => (
             <div className="block-container w-20 h-20" key={skill.name}>
               <div className="btn-back bg-gradient-to-br from-sky-500 to-gray-300 rounded-xl" />
-                <div className="btn-front rounded-xl flex justify-center items-center relative">
-                  <img
-                    src={skill.imageUrl}
-                    alt={skill.name}
-                    className="w-1/2 h-1/2 object-contain contrast-125"
-                  />
-                <p className="absolute text-center top-16 text-xs w-full">{skill.name}</p>
-                </div>
+              <div className="btn-front rounded-xl flex justify-center items-center relative">
+                <img
+                  src={skill.imageUrl}
+                  alt={skill.name}
+                  className="w-1/2 h-1/2 object-contain contrast-125"
+                />
+                <p className="absolute text-center top-16 text-xs w-full">
+                  {skill.name}
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -50,10 +52,11 @@ const About = () => {
 
       <div className="py-16">
         <h3 className="subhead-text">My Journey</h3>
-        <div className="mt-5 flex flex-col gap-3 text-slate-500">
+        <div className="mt-5 flex flex-col gap-3 text-slate-600">
           <p>
-            I've worked on numerous web development projects, while learning and leveling up
-            my skills. Here's a detailed rundown through my comprehensive skill set:"
+            I've worked on numerous web development projects, while learning and
+            leveling up my skills. Here's a detailed rundown through my
+            comprehensive skill set:"
           </p>
         </div>
 

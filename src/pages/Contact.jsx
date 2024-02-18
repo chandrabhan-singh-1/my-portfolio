@@ -172,7 +172,7 @@ const Contact = () => {
             />
           </Suspense>
         </Canvas>
-        <p className="absolute top-[18rem] md:top-[25rem] left-4 sm:left-10 w-full  text-center text-slate-500 mt-2 leading-relaxed">
+        <p className="absolute top-[18rem] md:top-[25rem] left-4 sm:left-10 w-full  text-center text-slate-600 mt-2 leading-relaxed">
           This is <strong>Murphy</strong>!<br /> He gets excited, when someone
           tries to contact me.
         </p>
