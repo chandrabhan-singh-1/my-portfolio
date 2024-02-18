@@ -13,6 +13,7 @@ import {
   shadcn,
   authLogo,
   genius,
+  discord,
 } from "../assets/images";
 import {
   css,
@@ -88,7 +89,7 @@ export const skills = [
   {
     imageUrl: shadcn,
     name: "Shadcn-UI",
-    type: "Frontend"
+    type: "Frontend",
   },
   {
     imageUrl: mui,
@@ -201,7 +202,7 @@ export const experiences = [
       "Integrating e-commerce solutions, membership systems, and other advanced functionalities with precision.",
       "Ensuring top-notch security measures and regularly updating plugins to maintain a secure WordPress environment.",
       "Providing intuitive and user-friendly content management solutions tailored to clients' needs.",
-    ],    
+    ],
   },
 ];
 
@@ -225,10 +226,22 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: discord,
+    theme: "btn-back-yellow",
+    name: "Discord 2.0",
+    features:
+      "A full-stack Discord clone with web-sockets. It allows user to create servers, channels, add/remove members, update member roles, update all servers/channels and have real-time chats.",
+    description:
+      "Discord 2.0, created using Next.js 13, live-kit, socket.io, tanstackQuery etc for real-time text/video/audio chat experiences.",
+    link: "https://discord-20-production-ea25.up.railway.app/",
+    codeLink: "https://github.com/chandrabhan-singh-1/discord-2.0",
+  },
+  {
     iconUrl: gamehub,
     theme: "btn-back-red",
     name: "Twitch Clone: GameHub",
-    features: "Live-stream, Live-Chat, Follow/Unfollow users, Block/Unblock users from chat/community, search streams etc.",
+    features:
+      "Live-stream, Live-Chat, Follow/Unfollow users, Block/Unblock users from chat/community, search streams etc.",
     description:
       "Developed a full-stack web application that allows users to do live-streams with all kind of popular streaming softwares e.g. OBS, wirecast or vMix etc.",
     link: "https://twitch-clone-gamehub.vercel.app/",
@@ -238,7 +251,8 @@ export const projects = [
     iconUrl: taskify,
     theme: "btn-back-purple",
     name: "Trello Clone: Taskify",
-    features: "Manage Organizations, Create Boards, using Unsplash api for Bg-images, Stripe based subscription, Drag & Drop, Recording task history etc.",
+    features:
+      "Manage Organizations, Create Boards, using Unsplash api for Bg-images, Stripe based subscription, Drag & Drop, Recording task history etc.",
     description:
       'Created a full-stack replica of the popular task management platform "Trello," enabling teams & individuals to manage several projects and tasks at one place.',
     link: "https://nextjs-14-trello-clone.vercel.app/",
@@ -248,9 +262,10 @@ export const projects = [
     iconUrl: genius,
     theme: "btn-back-green",
     name: "AI-Based SAAS: Genius",
-    features: "Chat with AI, Image generation, Video generation, Code generation, Music generation and Secure subscription service etc.",
+    features:
+      "Chat with AI, Image generation, Video generation, Code generation, Music generation and Secure subscription service etc.",
     description:
-      'This is a Full-stack AI based SAAS platform, where users are offered various ai-services at a single platform with the help of Open-AI and Replicate-AI APIs.',
+      "This is a Full-stack AI based SAAS platform, where users are offered various ai-services at a single platform with the help of Open-AI and Replicate-AI APIs.",
     link: "https://genius-ai-saas-pi.vercel.app/",
     codeLink: "https://github.com/chandrabhan-singh-1/Genius-ai-saas",
   },
@@ -258,10 +273,11 @@ export const projects = [
     iconUrl: auth,
     theme: "btn-back-blue",
     name: "Authentication App: NextAuth/Auth.js",
-    features: "2-Factor-Authentication, Role based permissions, OAuth services, Email verification, Seamless real-time data updation etc.",
+    features:
+      "2-Factor-Authentication, Role based permissions, OAuth services, Email verification, Seamless real-time data updation etc.",
     description:
-      "Created a Auth.js/NextAuth based authentication project. This project is intended to showcase my NextAuth implementation skills.",  
-      link: "https://next-auth-js-mu.vercel.app/",
-      codeLink: "https://github.com/chandrabhan-singh-1/next-auth-js",
+      "Created a Auth.js/NextAuth based authentication project. This project is intended to showcase my NextAuth implementation skills.",
+    link: "https://next-auth-js-mu.vercel.app/",
+    codeLink: "https://github.com/chandrabhan-singh-1/next-auth-js",
   },
 ];

@@ -1,14 +1,13 @@
 import { NavLink } from "react-router-dom";
 
 import { coder2 } from "../assets/images";
-import { mine } from "../assets/images";
 
 const Navbar = () => {
   return (
     <header className="header">
       <NavLink to="/" className={"shrink-0"}>
         <img
-          src={mine}
+          src={coder2}
           alt="logo"
           height={70}
           width={70}

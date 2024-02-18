@@ -1,4 +1,3 @@
-import mine from "https://github.com/chandrabhan-singh-1/shared-assets/blob/main/Images/portfolio/images/bg-my.png";
 import docker from "./docker.png";
 import frontend from "./Frontend.jpg";
 import backend from "./Backend.jpg";
@@ -16,6 +15,7 @@ import taskify from "./Taskify.jpg";
 import authLogo from "./auth.png";
 import shadcn from "./shadcn.png";
 import genius from "./genius.jpg";
+import discord from "./discord-logo.jpg";
 
 export {
   gamehub,
@@ -35,5 +35,5 @@ export {
   authLogo,
   shadcn,
   genius,
-  mine,
+  discord,
 };
