@@ -210,7 +210,7 @@ export const socialLinks = [
   {
     name: "My Resume",
     iconUrl: cv,
-    link: "https://drive.google.com/file/d/1Zb8gfWRzRLl8dcNgRX228ncQEP7vsjld/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1u1-Yha4YlD_bPj8oHIP47lvUVNmqrFSH/view?usp=sharing",
   },
   {
     name: "GitHub",
