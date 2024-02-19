@@ -234,6 +234,8 @@ export const projects = [
     description:
       "Discord 2.0, created using Next.js 13, live-kit, socket.io, tanstackQuery etc for real-time text/video/audio chat experiences.",
     link: "https://discord-20-production-ea25.up.railway.app/",
+    intro:
+      "https://www.dropbox.com/scl/fi/jji5e4ds581fanutjivue/Discord-2.0-Intro-Made-with-Clipchamp_1708355926827.mp4?rlkey=i76axbyjesiwd14k8r331t5vu&dl=0",
     codeLink: "https://github.com/chandrabhan-singh-1/discord-2.0",
   },
   {
@@ -245,6 +247,8 @@ export const projects = [
     description:
       "Developed a full-stack web application that allows users to do live-streams with all kind of popular streaming softwares e.g. OBS, wirecast or vMix etc.",
     link: "https://twitch-clone-gamehub.vercel.app/",
+    intro:
+      "https://www.dropbox.com/scl/fi/kbkmm3mozphch2g25ll2r/Gamehub-Intro-Made-with-Clipchamp_1708353239245.mp4?rlkey=1oqyb44d5qyczejpcmhn4clb6&dl=0",
     codeLink: "https://github.com/chandrabhan-singh-1/twitch-clone-gamehub",
   },
   {
@@ -256,6 +260,8 @@ export const projects = [
     description:
       'Created a full-stack replica of the popular task management platform "Trello," enabling teams & individuals to manage several projects and tasks at one place.',
     link: "https://nextjs-14-trello-clone.vercel.app/",
+    intro:
+      "https://www.dropbox.com/scl/fi/yaaz20dk2rvhqsv8hxuor/Taskify-Intro-Made-with-Clipchamp_1708346440723.mp4?rlkey=mvg3z7w0sxa94jhk5rsetgos5&dl=0",
     codeLink: "https://github.com/chandrabhan-singh-1/Nextjs-14-Trello-Clone",
   },
   {
@@ -267,17 +273,19 @@ export const projects = [
     description:
       "This is a Full-stack AI based SAAS platform, where users are offered various ai-services at a single platform with the help of Open-AI and Replicate-AI APIs.",
     link: "https://genius-ai-saas-pi.vercel.app/",
+    intro:
+      "https://www.dropbox.com/scl/fi/poezb5nnciq4j82n7jh02/Genius-Intro-Made-with-Clipchamp_1708350683303.mp4?rlkey=zzkor4r55aes2hzjj61hdqcyz&dl=0",
     codeLink: "https://github.com/chandrabhan-singh-1/Genius-ai-saas",
   },
-  {
-    iconUrl: auth,
-    theme: "btn-back-blue",
-    name: "Authentication App: NextAuth/Auth.js",
-    features:
-      "2-Factor-Authentication, Role based permissions, OAuth services, Email verification, Seamless real-time data updation etc.",
-    description:
-      "Created a Auth.js/NextAuth based authentication project. This project is intended to showcase my NextAuth implementation skills.",
-    link: "https://next-auth-js-mu.vercel.app/",
-    codeLink: "https://github.com/chandrabhan-singh-1/next-auth-js",
-  },
+  // {
+  //   iconUrl: auth,
+  //   theme: "btn-back-blue",
+  //   name: "Authentication App: NextAuth/Auth.js",
+  //   features:
+  //     "2-Factor-Authentication, Role based permissions, OAuth services, Email verification, Seamless real-time data updation etc.",
+  //   description:
+  //     "Created a Auth.js/NextAuth based authentication project. This project is intended to showcase my NextAuth implementation skills.",
+  //   link: "https://next-auth-js-mu.vercel.app/",
+  //   codeLink: "https://github.com/chandrabhan-singh-1/next-auth-js",
+  // },
 ];

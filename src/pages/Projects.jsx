@@ -19,12 +19,14 @@ const Projects = () => {
       <p className="text-slate-600 mt-2 leading-relaxed">
         I've embarked on numerous projects throughout the years, but these are
         some of the closest to my heart. Many of them are public and
-        open-source, so if you come across something that downgrade your
+        open-source, so if you come across something that diminishes your
         interest, feel free to explore the codebase and contribute your ideas
         for further enhancements. Your collaboration is highly valued!
-        <br />
-        [Note: Using Vercel free tier for hosting! It may cause response time
-        errors (specially on Genius).]
+        <p className="mt-2 text-xs">
+          All projects are hosted on{" "}
+          <span className="underline">Vercel free tier!</span> So, some actions
+          can cause response time errors (e.g. Video generation on Genius).
+        </p>
       </p>
 
       <div className="flex flex-wrap mt-20 mb-14 gap-16">
@@ -63,6 +65,14 @@ const Projects = () => {
                   className="hover:blue-gradient_text drop-shadow hover:font-semibold hover:scale-105"
                 >
                   Code
+                </Link>
+                <Link
+                  to={project.intro}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:blue-gradient_text drop-shadow hover:font-semibold hover:scale-105 ml-4"
+                >
+                  Intro
                 </Link>
                 <div className="flex items-center justify-center gap-2 ml-4">
                   <Link
