@@ -15,7 +15,7 @@ const Navbar = () => {
           className="hover:scale-110 hover:border-sky-500 border-2 border-gray-300 object-cover rounded-full"
         />
       </NavLink>
-      <nav className="flex text-md sm:text-lg gap-4 sm:gap-7 font-medium">
+      <nav className="flex text-sm sm:text-lg gap-4 sm:gap-7 font-medium">
         <NavLink
           to="/about"
           className={({ isActive }) =>
