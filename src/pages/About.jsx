@@ -56,7 +56,7 @@ const About = () => {
           <p>
             I've worked on numerous web development projects, while learning and
             leveling up my skills. Here's a detailed rundown through my
-            comprehensive skill set:"
+            comprehensive skill set:
           </p>
         </div>
 

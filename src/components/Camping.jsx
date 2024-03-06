@@ -8,7 +8,7 @@ import { useAtom } from "jotai";
 import React from "react";
 import { degToRad } from "three/src/math/MathUtils";
 import { currentPageAtom } from "./UI";
-import {cn} from "../lib/utils";
+import { cn } from "../lib/utils";
 
 const OverlayItem = ({
   className = "",
@@ -19,26 +19,34 @@ const OverlayItem = ({
   link,
   ...props
 }) => {
-  const publicUrl = import.meta.env.VITE_PUBLIC_URL || '/';
+  const publicUrl = import.meta.env.VITE_PUBLIC_URL || "/";
   const finalLink = `${publicUrl}${link}`;
-  const target = link==="cv"? "_blank":"_self";
+  const target = link === "cv" ? "_blank" : "_self";
   const [currentPage] = useAtom(currentPageAtom);
   return (
     <Html
       transform
       distanceFactor={1.2}
       center
-      className={cn("w-48 rounded-md overflow-hidden transition-opacity duration-500",
-        currentPage === "store" ? "" : "opacity-0")}
+      className={cn(
+        "w-48 rounded-md overflow-hidden transition-opacity duration-500",
+        currentPage === "store" ? "" : "opacity-0"
+      )}
       {...props}
     >
       <div className="bg-white bg-opacity-70 backdrop-blur-lg text-xs p-2 w-full">
         <h2 className="font-bold">{title}</h2>
         <p>{description}</p>
       </div>
-      <a href={`${link==="cv" ? import.meta.env.VITE_CV_LINK : finalLink}`} target={target}>
+      <a
+        href={`${link === "cv" ? import.meta.env.VITE_CV_LINK : finalLink}`}
+        target={target}
+      >
         <button
-          className={cn("tracking-wider hover:bg-opacity-50 transition-colors duration-500 px-4 py-2 font-semibold text-white w-full text-xs", bgColor)}
+          className={cn(
+            "tracking-wider hover:bg-opacity-50 transition-colors duration-500 px-4 py-2 font-semibold text-white w-full text-xs",
+            bgColor
+          )}
         >
           {label}
         </button>
@@ -48,7 +56,9 @@ const OverlayItem = ({
 };
 
 export default function Camping({ html, ...props }) {
-  const { nodes, materials } = useGLTF("/models/Camping Asset Collection.glb");
+  const { nodes, materials } = useGLTF(
+    "https://utfs.io/f/00802aff-7384-4a2f-90f9-1ed176f5cc61-gr5a37.glb"
+  );
   return (
     <group {...props} dispose={null}>
       <group name="Scene">
@@ -205,7 +215,9 @@ export default function Camping({ html, ...props }) {
               position-z={1.2}
               position-y={-0.1}
               title={"About Me!"}
-              description={"I am a full-stack web developer specialized in Next.js. click below to know more about me..."}
+              description={
+                "I am a full-stack web developer specialized in Next.js. click below to know more about me..."
+              }
               label={"Click 🙋🏻"}
               link={"/about"}
               bgColor={"bg-purple-500"}
@@ -1148,7 +1160,9 @@ export default function Camping({ html, ...props }) {
               position-z={0.25}
               rotation-x={-degToRad(20)}
               title={"Connect with me!"}
-              description={"If you have any feedback/views to share, then send me your message. I'd love to know that..."}
+              description={
+                "If you have any feedback/views to share, then send me your message. I'd love to know that..."
+              }
               label={"Contact📧"}
               link={"/contact"}
               bgColor={"bg-orange-500"}
@@ -1355,9 +1369,11 @@ export default function Camping({ html, ...props }) {
               position-z={-0.14}
               rotation-x={-degToRad(30)}
               title={"Resume!"}
-              description={"Interested in hiring me or working with me? Check this out...👇🏽"}
+              description={
+                "Interested in hiring me or working with me? Check this out...👇🏽"
+              }
               label={"CV 📝"}
-              link={'cv'}
+              link={"cv"}
               bgColor={"bg-blue-500"}
               className="transition delay-700"
             />
@@ -1549,4 +1565,6 @@ export default function Camping({ html, ...props }) {
   );
 }
 
-useGLTF.preload("/models/Camping Asset Collection.glb");
+useGLTF.preload(
+  "https://utfs.io/f/00802aff-7384-4a2f-90f9-1ed176f5cc61-gr5a37.glb"
+);

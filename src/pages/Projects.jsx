@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CTA } from "../components";
 import { projects } from "../constants";
 import { arrow } from "../assets/icons";
-import { coder, coder2 } from "../assets/images";
+import { coder } from "../assets/images";
 
 const Projects = () => {
   return (
@@ -16,7 +16,7 @@ const Projects = () => {
         📜
       </h1>
 
-      <p className="text-slate-600 mt-2 leading-relaxed">
+      <div className="text-slate-600 mt-2 leading-relaxed">
         I've embarked on numerous projects throughout the years, but these are
         some of the closest to my heart. Many of them are public and
         open-source, so if you come across something that diminishes your
@@ -27,7 +27,7 @@ const Projects = () => {
           <span className="underline">Vercel free tier!</span> So, some actions
           can cause response time errors (e.g. Video generation on Genius).
         </p>
-      </p>
+      </div>
 
       <div className="flex flex-wrap mt-20 mb-14 gap-16">
         {projects.map((project) => (
