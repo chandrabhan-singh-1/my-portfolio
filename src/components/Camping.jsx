@@ -56,9 +56,7 @@ const OverlayItem = ({
 };
 
 export default function Camping({ html, ...props }) {
-  const { nodes, materials } = useGLTF(
-    "https://utfs.io/f/00802aff-7384-4a2f-90f9-1ed176f5cc61-gr5a37.glb"
-  );
+  const { nodes, materials } = useGLTF("/camping.glb");
   return (
     <group {...props} dispose={null}>
       <group name="Scene">
@@ -1565,6 +1563,4 @@ export default function Camping({ html, ...props }) {
   );
 }
 
-useGLTF.preload(
-  "https://utfs.io/f/00802aff-7384-4a2f-90f9-1ed176f5cc61-gr5a37.glb"
-);
+useGLTF.preload("/camping.glb");

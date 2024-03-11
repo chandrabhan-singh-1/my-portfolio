@@ -65,8 +65,8 @@ const Experience = () => {
   return (
     <>
       <CameraControls ref={controls} />
-      <mesh ref={meshFitCameraHome} position-z={1.5} visible={false}>
-        <boxGeometry args={[7.5, 2, 2]} />
+      <mesh ref={meshFitCameraHome} position-z={2.5} visible={false}>
+        <boxGeometry args={[7, 4, 4]} />
         <meshBasicMaterial color="orange" transparent opacity={0.5} />
       </mesh>
       <Text
