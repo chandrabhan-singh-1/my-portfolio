@@ -30,6 +30,8 @@ const discord =
   "https://utfs.io/f/31cb7e01-0b2f-4ee0-8ba0-5a83c6c149e0-ua24ks.jpg";
 const docker =
   "https://utfs.io/f/0c91c64d-317d-4c7c-aad5-9f4385e1ea3d-lxr74w.png";
+const finance =
+  "https://utfs.io/f/6314c376-5dfd-4163-84c3-2152b3ef9174-en93sg.jpeg";
 
 export {
   gamehub,
@@ -50,4 +52,5 @@ export {
   shadcn,
   genius,
   discord,
+  finance,
 };

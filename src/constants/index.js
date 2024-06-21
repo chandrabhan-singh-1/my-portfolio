@@ -14,6 +14,7 @@ import {
   authLogo,
   genius,
   discord,
+  finance,
 } from "../assets/images";
 import {
   css,
@@ -277,15 +278,15 @@ export const projects = [
       "https://www.dropbox.com/scl/fi/poezb5nnciq4j82n7jh02/Genius-Intro-Made-with-Clipchamp_1708350683303.mp4?rlkey=zzkor4r55aes2hzjj61hdqcyz&dl=0",
     codeLink: "https://github.com/chandrabhan-singh-1/Genius-ai-saas",
   },
-  // {
-  //   iconUrl: auth,
-  //   theme: "btn-back-blue",
-  //   name: "Authentication App: NextAuth/Auth.js",
-  //   features:
-  //     "2-Factor-Authentication, Role based permissions, OAuth services, Email verification, Seamless real-time data updation etc.",
-  //   description:
-  //     "Created a Auth.js/NextAuth based authentication project. This project is intended to showcase my NextAuth implementation skills.",
-  //   link: "https://next-auth-js-mu.vercel.app/",
-  //   codeLink: "https://github.com/chandrabhan-singh-1/next-auth-js",
-  // },
+  {
+    iconUrl: finance,
+    theme: "btn-back-blue",
+    name: "Finance App: Your Financial Ally",
+    features:
+      "Upload your .csv statement files, Advanced dashboard, Multiple Charts to track your financial trends, feed individual transactions/data, Create Unlimited Accounts and Categories etc.",
+    description:
+      "A comprehensive Finance management platform that helps you achieve freedom from all the hassle of managing your finances, with endless features and resources.",
+    link: "https://finance-app-gamma-rust.vercel.app/",
+    codeLink: "https://github.com/chandrabhan-singh-1/finance-app",
+  },
 ];
