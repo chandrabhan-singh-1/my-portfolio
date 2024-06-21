@@ -66,14 +66,16 @@ const Projects = () => {
                 >
                   Code
                 </Link>
-                <Link
-                  to={project.intro}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:blue-gradient_text drop-shadow hover:font-semibold hover:scale-105 ml-4"
-                >
-                  Intro
-                </Link>
+                {project?.intro && (
+                  <Link
+                    to={project.intro}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:blue-gradient_text drop-shadow hover:font-semibold hover:scale-105 ml-4"
+                  >
+                    Intro
+                  </Link>
+                )}
                 <div className="flex items-center justify-center gap-2 ml-4">
                   <Link
                     to={project.link}
