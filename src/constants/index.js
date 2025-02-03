@@ -226,7 +226,7 @@ export const socialLinks = [
 ];
 
 export const projects = [
-  {
+  /*{
     iconUrl: discord,
     theme: "btn-back-yellow",
     name: "Discord 2.0",
@@ -238,7 +238,7 @@ export const projects = [
     intro:
       "https://www.dropbox.com/scl/fi/jji5e4ds581fanutjivue/Discord-2.0-Intro-Made-with-Clipchamp_1708355926827.mp4?rlkey=i76axbyjesiwd14k8r331t5vu&dl=0",
     codeLink: "https://github.com/chandrabhan-singh-1/discord-2.0",
-  },
+  },*/
   {
     iconUrl: gamehub,
     theme: "btn-back-red",
@@ -265,7 +265,7 @@ export const projects = [
       "https://www.dropbox.com/scl/fi/yaaz20dk2rvhqsv8hxuor/Taskify-Intro-Made-with-Clipchamp_1708346440723.mp4?rlkey=mvg3z7w0sxa94jhk5rsetgos5&dl=0",
     codeLink: "https://github.com/chandrabhan-singh-1/Nextjs-14-Trello-Clone",
   },
-  {
+  /*{
     iconUrl: genius,
     theme: "btn-back-green",
     name: "AI-Based SAAS: Genius",
@@ -277,7 +277,7 @@ export const projects = [
     intro:
       "https://www.dropbox.com/scl/fi/poezb5nnciq4j82n7jh02/Genius-Intro-Made-with-Clipchamp_1708350683303.mp4?rlkey=zzkor4r55aes2hzjj61hdqcyz&dl=0",
     codeLink: "https://github.com/chandrabhan-singh-1/Genius-ai-saas",
-  },
+  },*/
   {
     iconUrl: finance,
     theme: "btn-back-blue",
