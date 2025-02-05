@@ -226,7 +226,7 @@ export const socialLinks = [
 ];
 
 export const projects = [
-  /*{
+  {
     iconUrl: discord,
     theme: "btn-back-yellow",
     name: "Discord 2.0",
@@ -234,11 +234,11 @@ export const projects = [
       "A full-stack Discord clone with web-sockets. It allows user to create servers, channels, add/remove members, update member roles, update all servers/channels and have real-time chats.",
     description:
       "Discord 2.0, created using Next.js 13, live-kit, socket.io, tanstackQuery etc for real-time text/video/audio chat experiences.",
-    link: "https://discord-20-production-ea25.up.railway.app/",
+    link: "https://discord-20.netlify.app/",
     intro:
       "https://www.dropbox.com/scl/fi/jji5e4ds581fanutjivue/Discord-2.0-Intro-Made-with-Clipchamp_1708355926827.mp4?rlkey=i76axbyjesiwd14k8r331t5vu&dl=0",
     codeLink: "https://github.com/chandrabhan-singh-1/discord-2.0",
-  },*/
+  },
   {
     iconUrl: gamehub,
     theme: "btn-back-red",
